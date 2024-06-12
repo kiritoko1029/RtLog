@@ -13,6 +13,6 @@ public class WebController {
 
     @GetMapping("/rtLog")
     public String toHome(){
-        return "index";
+        return "rt";
     }
 }
