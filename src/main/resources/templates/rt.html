@@ -16,40 +16,46 @@
     <script src="./min/vs/loader.js"></script>
     <script src="./min/vs/editor/editor.main.nls.js"></script>
     <script src="./min/vs/editor/editor.main.js"></script>
+    <script src="./components/star-button.js"></script>
+
     <title>RtLog 实时日志</title>
 </head>
 <body>
-<div class="header">
-    <h2>实时日志</h2>
-    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
-        <div class="wheel"></div>
-        <div class="hamster">
-            <div class="hamster__body">
-                <div class="hamster__head">
-                    <div class="hamster__ear"></div>
-                    <div class="hamster__eye"></div>
-                    <div class="hamster__nose"></div>
-                </div>
-                <div class="hamster__limb hamster__limb--fr"></div>
-                <div class="hamster__limb hamster__limb--fl"></div>
-                <div class="hamster__limb hamster__limb--br"></div>
-                <div class="hamster__limb hamster__limb--bl"></div>
-                <div class="hamster__tail"></div>
+<div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+    <div class="wheel"></div>
+    <div class="hamster">
+        <div class="hamster__body">
+            <div class="hamster__head">
+                <div class="hamster__ear"></div>
+                <div class="hamster__eye"></div>
+                <div class="hamster__nose"></div>
             </div>
+            <div class="hamster__limb hamster__limb--fr"></div>
+            <div class="hamster__limb hamster__limb--fl"></div>
+            <div class="hamster__limb hamster__limb--br"></div>
+            <div class="hamster__limb hamster__limb--bl"></div>
+            <div class="hamster__tail"></div>
         </div>
-        <div class="spoke"></div>
     </div>
+    <div class="spoke"></div>
+</div>
+<div class="header item-left">
+    <h2>实时日志</h2>
+    <button is="star-button" id="clearBtn">清空日志</button>
 </div>
 
 <div id="container" >
     <div class="card">
         <div class="card__content">
-            <div id="editor"></div></div>
+            <div id="editor"></div>
+        </div>
     </div>
 
 </div>
 </body>
+
 <script src="./websocket/ws.js"></script>
+<script src="./index.js"></script>
 <style>
 
 </style>

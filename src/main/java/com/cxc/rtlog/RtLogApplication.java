@@ -8,6 +8,7 @@ public class RtLogApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(RtLogApplication.class, args);
+
     }
 
 }
