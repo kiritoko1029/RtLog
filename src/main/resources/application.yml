@@ -5,5 +5,3 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
 server:
   port: 8080
-logging:
-  config: classpath:logback-spring.xml

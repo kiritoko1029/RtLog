@@ -1,3 +1,4 @@
 com.cxc.rtlog.webLog.WebSocketConfig
 com.cxc.rtlog.controller.WebController
 com.cxc.rtlog.config.WebAutoConfig
+com.cxc.rtlog.config.MyCommandLineRunner

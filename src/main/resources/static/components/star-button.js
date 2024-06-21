@@ -1,6 +1,6 @@
 class starButton extends HTMLButtonElement {
     constructor() {
-        self = super();
+        const btn = super();
         // 创建影子根
         const star1 = document.createElement('div');
         star1.setAttribute('class', 'star-1');
@@ -269,13 +269,13 @@ button:hover .star-6 {
   fill: #fffdef;
 }
 `
-        self.appendChild(star1);
-        self.appendChild(star2);
-        self.appendChild(star3);
-        self.appendChild(star4);
-        self.appendChild(star5);
-        self.appendChild(star6);
-        self.appendChild(style);
+        btn.appendChild(star1);
+        btn.appendChild(star2);
+        btn.appendChild(star3);
+        btn.appendChild(star4);
+        btn.appendChild(star5);
+        btn.appendChild(star6);
+        btn.appendChild(style);
     }
 
     connectedCallback() {
